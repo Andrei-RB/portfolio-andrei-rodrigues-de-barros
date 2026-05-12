@@ -1,0 +1,59 @@
+{
+  "entities": {
+    "Usuario": {
+      "title": "Usuário",
+      "description": "Informações do usuário autenticado",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "ID único do Firebase Auth" },
+        "email": { "type": "string", "format": "email", "description": "E-mail do usuário" },
+        "displayName": { "type": "string", "description": "Nome de exibição" },
+        "photoURL": { "type": "string", "description": "URL da foto de perfil" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Data de criação" }
+      },
+      "required": ["uid", "email"]
+    },
+    "HistoricoQRCode": {
+      "title": "Histórico de QR Code",
+      "description": "Configurações de um QR Code salvo",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "usuarioId": { "type": "string" },
+        "nome": { "type": "string" },
+        "configuracoes": { "type": "object" },
+        "urlDestino": { "type": "string" },
+        "ehDinamico": { "type": "boolean" },
+        "idCurto": { "type": "string" },
+        "criadoEm": { "type": "string", "format": "date-time" }
+      },
+      "required": ["usuarioId", "configuracoes", "criadoEm"]
+    },
+    "LinkDinamico": {
+      "title": "Link Dinâmico",
+      "description": "Mapeamento de ID curto para URL real",
+      "type": "object",
+      "properties": {
+        "idCurto": { "type": "string" },
+        "urlDestino": { "type": "string" },
+        "usuarioId": { "type": "string" },
+        "cliques": { "type": "number" }
+      },
+      "required": ["idCurto", "urlDestino", "usuarioId"]
+    }
+  },
+  "firestore": {
+    "/usuarios/{userId}": {
+      "schema": "Usuario",
+      "description": "Perfis de usuários"
+    },
+    "/historico_qr_codes/{qrId}": {
+      "schema": "HistoricoQRCode",
+      "description": "Histórico de gerações"
+    },
+    "/links_dinamicos/{idCurto}": {
+      "schema": "LinkDinamico",
+      "description": "Redirecionamentos dinâmicos"
+    }
+  }
+}

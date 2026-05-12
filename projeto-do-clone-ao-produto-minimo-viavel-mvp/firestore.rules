@@ -1,0 +1,51 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Funções Auxiliares de Segurança
+    // ===============================================================
+    function estaAutenticado() {
+      return request.auth != null;
+    }
+
+    function ehDono(userId) {
+      return estaAutenticado() && request.auth.uid == userId;
+    }
+
+    function campoNaoModificado(campo) {
+      return !(campo in request.resource.data) || request.resource.data[campo] == resource.data[campo];
+    }
+
+    // ===============================================================
+    // Regras por Coleção
+    // ===============================================================
+
+    // Perfis de Usuários
+    match /usuarios/{userId} {
+      allow read: if ehDono(userId);
+      allow create: if ehDono(userId);
+      allow update: if ehDono(userId) && campoNaoModificado('uid');
+    }
+
+    // Histórico de QR Codes
+    match /historico_qr_codes/{qrId} {
+      allow read: if estaAutenticado() && resource.data.usuarioId == request.auth.uid;
+      allow create: if estaAutenticado() && request.resource.data.usuarioId == request.auth.uid;
+      allow update: if estaAutenticado() && resource.data.usuarioId == request.auth.uid && campoNaoModificado('usuarioId');
+      allow delete: if estaAutenticado() && resource.data.usuarioId == request.auth.uid;
+    }
+
+    // Links Dinâmicos
+    match /links_dinamicos/{idCurto} {
+      allow read: if true; // Aberto para redirecionamento
+      allow create: if estaAutenticado() && request.resource.data.usuarioId == request.auth.uid;
+      allow update: if estaAutenticado() && resource.data.usuarioId == request.auth.uid && campoNaoModificado('usuarioId');
+      allow delete: if estaAutenticado() && resource.data.usuarioId == request.auth.uid;
+    }
+
+    // Bloqueio padrão
+    match /{path=**} {
+      allow read, write: if false;
+    }
+  }
+}
