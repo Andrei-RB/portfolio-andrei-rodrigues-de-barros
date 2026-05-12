@@ -10,9 +10,6 @@ Este projeto é uma ferramenta avançada de geração e estilização de QR Code
 
 Desenvolvido com foco em **UI/UX e Performance**, o sistema oferece um feedback visual instantâneo (Real-time Preview), permitindo o ajuste fino de cada detalhe, desde o arredondamento dos cantos até a densidade dos pontos, garantindo que o código final se alinhe perfeitamente à identidade visual da marca ou projeto.
 
-![Dashboard Principal](https://ais-pre-6fyj7y3iaastbzgwqsqds4-413474964045.us-west2.run.app/favicon.ico)
-*Figura 1: Dashboard interativo com painel de controles e preview em tempo real.*
-
 ## 🚀 Tecnologias Utilizadas
 *   **Framework:** React 19 com Vite
 *   **Estilização:** Tailwind CSS v4 & Shadcn/ui
