@@ -1,36 +1,59 @@
 # Andrei Rodrigues de Barros
-> Estudante de Ciência da Computação
+> Engenheiro de Software Full-Stack | Estudante de Ciência da Computação
  
 ---
  
 ### 📫 Contato & Redes Sociais
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](LINK_DO_SEU_LINKEDIN)
-[![E-mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seu-email-profissional@email.com)
-[![Currículo](https://img.shields.io/badge/Currículo-000000?style=for-the-badge&logo=read-the-docs&logoColor=white)](LINK_DO_PDF_OU_SITE)
+
+<p align="left">
+  <a href="https://www.linkedin.com/in/andreirdebarros" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="mailto:andreirdebarros.contato@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail">
+  </a>
+  <a href="https://dreibarros.web.app" target="_blank">
+    <img src="https://img.shields.io/badge/Currículo-000000?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Currículo">
+  </a>
+</p>
  
 ---
  
 ### 👨‍💻 Sobre
-Atualmente cursando o [Xº] período de [Nome do Curso] na [Nome da Instituição]. Sou apaixonado por resolver problemas através da tecnologia e possuo foco em [Área de Interesse - ex: Desenvolvimento Backend / Análise de Dados].
- 
-* **Habilidades Técnicas:** [Ex: Python, Java, SQL, AWS, Docker].
-* **Habilidades Socioemocionais:** Trabalho em equipe, comunicação assertiva e pensamento crítico.
-* **Experiência/Projetos Relevantes:** Atuei em [Projeto de Iniciação Científica/Estágio] onde desenvolvi [resultado principal].
+
+Atualmente no 7º período de Ciência da Computação na Universidade Cidade de São Paulo. Atuo como Engenheiro de Software Full-Stack, com foco no desenvolvimento de aplicações web e análise de dados.
+
+Possuo experiência na construção de arquiteturas escaláveis, integração de sistemas (APIs REST, WebSockets) e implementação de interfaces modernas. Meu processo de desenvolvimento é orientado a boas práticas de engenharia de software e conformidade com padrões de segurança da informação, como a OWASP Top 10.
+
+* **Habilidades Técnicas:** Desenvolvimento Full-Stack, Arquitetura Cloud-Native, Modelagem de Bancos de Dados e Segurança de Aplicações.
+* **Habilidades Socioemocionais:** Resolução de problemas complexos, pensamento crítico e comunicação técnica assertiva.
+* **Foco Atual:** Construção de sistemas eficientes utilizando ecossistemas modernos (Next.js, TypeScript) integrados a soluções robustas de dados (PostgreSQL, Bancos Vetoriais).
  
 ---
  
-### 🛠 Minhas Ferramentas Favoritas
+### 🛠 Stack Tecnológico
  
-#### 💻 Linguagens e Tecnologias
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
+#### 💻 Linguagens e Frameworks Front-end
+<p align="left">
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
+  <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite.js">
+</p>
  
-#### 🗄️ Banco de Dados
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
- 
-#### 🤖 Inteligência Artificial & Ciência de Dados
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+#### ⚙️ Back-end & Dados
+<p align="left">
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+  <img src="https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Chroma.db-FF5722?style=for-the-badge&logo=database&logoColor=white" alt="Chroma.db">
+</p>
+
+#### 🔧 Infraestrutura & Ferramentas
+<p align="left">
+  <img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" alt="Firebase">
+  <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+</p>
  
 ---
  
